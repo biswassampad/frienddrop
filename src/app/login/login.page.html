@@ -1,14 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+
+<div class="wrapper">
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 508 233" style="enable-background:new 0 0 508 233;" xml:space="preserve">
+<style type="text/css">
+	
+</style>
+<rect x="72.45" y="31.41" class="st0" width="1693.1" height="686.21"/>
+<text transform="matrix(1 0 0 1 72.4482 174.4844)" class="st1 st2 st3">Login</text>
+</svg>
+
+</div>
   <ion-card>
   <ion-card-content>
   <ion-item>
- 
   <ion-input type="email" placeholder="Email" [(ngModel)]="email"></ion-input>
 </ion-item>
 <ion-item>
@@ -17,6 +23,17 @@
 </ion-item>
 
   </ion-card-content>
-  <ion-button expand="block" (click)="login()" >Login</ion-button>
+  
 </ion-card>
+<ion-row>
+<ion-col>
+<ion-button expand="block" (click)="login()" >Login</ion-button>
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+<p class="to-login">Trouble In login?  <a class="navlink" href="#">Forgot Password</a> </p> 
+<p class="to-login">New Here,Wanna Try Out?  <a class="navlink" href="#">Sign Up here</a> </p> 
+</ion-col>
+</ion-row>
 </ion-content>

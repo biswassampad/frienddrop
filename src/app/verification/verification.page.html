@@ -1,4 +1,86 @@
 
 <ion-content>
+<div class="wrapper">
+<h3>One Step More</h3>
+</div>
+<ion-card>
+  <ion-card-content>
+<ion-item>
+    <ion-label>Wanna Pool ?</ion-label>
+    <ion-toggle [(ngModel)]="pool"  (ionChange)="changeRegistrationMode()"></ion-toggle>
+</ion-item>
 
+<ion-item>
+  <ion-label position="floating">Name</ion-label>
+  <ion-input [(ngModel)]="name"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Mobile Number</ion-label>
+  <ion-input type="phone" [(ngModel)]="mobile"></ion-input>
+</ion-item>
+<div *ngIf="registrationmode=='pooler'">
+<ion-item>
+    <ion-label>Vehicle Type</ion-label>
+    <ion-select placeholder="Select One" [(ngModel)]="vehicle_type">
+      <ion-select-option value="1">Four Wheeler</ion-select-option>
+      <ion-select-option value="2">Two Wheeler</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+  <ion-label position="floating">Vehicle Model</ion-label>
+  <ion-input [(ngModel)]="vehiclemodel"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label>Id Card type</ion-label>
+    <ion-select placeholder="Select One" [(ngModel)]="idcard_type">
+      <ion-select-option value="adharcard">Adhar Card</ion-select-option>
+      <ion-select-option value="voterid">Voter ID Card</ion-select-option>
+      <ion-select-option value="passport">Passport</ion-select-option>
+      <ion-select-option value="govtidcard">Govt ID Card</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+
+<ion-item>
+  <ion-label position="floating">Id Card Number</ion-label>
+  <ion-input [(ngModel)]="idcard_no"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label>ID Card Image</ion-label>
+  <ion-input type="file" [(ngModel)]="idcard"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Vehicle Number</ion-label>
+  <ion-input [(ngModel)]="vehicle_number"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Vehicle RC Image</ion-label>
+  <ion-input type="file" [(ngModel)]="vehicle_rc"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Driving License Number</ion-label>
+  <ion-input [(ngModel)]="dl_number"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>Driving License Image</ion-label>
+  <ion-input type="file" [(ngModel)]="dl_img"></ion-input>
+</ion-item>
+</div>
+   </ion-card-content>
+</ion-card>
+<ion-row>
+<ion-col>
+<div class="tnc">
+ <ion-checkbox color="warning" checked slot="start"></ion-checkbox>
+ <ion-label style="color:white;margin-left:20px;margin-top:-5px !important;">Accepted <a href="#" style="color:#f1c40f;text-decoration:none;">Terms & Conditions</a></ion-label>
+</div>
+</ion-col>
+</ion-row>
+<ion-row>
+<ion-col>
+<ion-button expand="block" (click)="UploadVerification(event)" >Verify & Submit</ion-button>
+</ion-col>
+</ion-row>
 </ion-content>

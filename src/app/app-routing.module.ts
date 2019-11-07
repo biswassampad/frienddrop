@@ -18,7 +18,9 @@ const routes: Routes = [
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'landing', loadChildren: './landing/landing.module#LandingPageModule' },
   { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
-  { path: 'verification', loadChildren: './verification/verification.module#VerificationPageModule' }
+  { path: 'verification', loadChildren: './verification/verification.module#VerificationPageModule' },
+  { path: 'welcome', loadChildren: './welcome/welcome.module#WelcomePageModule' },
+  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' }
 ];
 
 @NgModule({

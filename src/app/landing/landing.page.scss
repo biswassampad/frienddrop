@@ -1,0 +1,49 @@
+ion-content{
+    --ion-background-color:#007ea6;
+}
+.logo_con{
+    align-self: center;
+}
+.logo{
+    width:200px;
+    margin:80px;
+}
+#layer_1{
+    clip: rect(0px 112px 175px 0px);
+  transition: clip 600ms ease-out;
+
+}
+#layer_1--collapsed{
+    clip: rect(0px 70px 34px 0px);
+}
+.cls-1,.cls-10,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{stroke:#fff;stroke-miterlimit:10;}
+.cls-1{fill:url(#linear-gradient);}
+.cls-2{fill:url(#linear-gradient-2);}
+.cls-3{fill:url(#linear-gradient-3);}
+.cls-4{fill:url(#linear-gradient-4);}
+.cls-5{fill:url(#linear-gradient-5);}
+.cls-6{fill:url(#linear-gradient-6);}
+.cls-7{fill:url(#linear-gradient-7);}
+.cls-8{fill:url(#linear-gradient-8);}
+.cls-9{fill:url(#linear-gradient-9);}
+.cls-10{fill:url(#linear-gradient-10);}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
+.tag-line{
+    position:initial;
+    bottom:10;
+    margin-top:100px;
+    margin-left:90px;
+    font-family: 'Josefin Slab', serif;
+    font-size:18px;
+    font-weight: bold;
+    color:white;
+}
+ion-button{
+    --background:#fec601;
+    --background-activated:#f1c40f;
+    --color:#004183;
+    --color-activated:#004183;
+}
+
+// svg styles do not temper
+

@@ -12,14 +12,54 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Home',
+      title: 'Ride',
       url: '/home',
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Profile',
+      url: '/profile',
+      icon: 'contact'
+    },
+    {
+      title: 'My Rides',
+      url: '/rides',
+      icon: 'car'
+    },
+    {
+      title: 'Ridy Credits',
+      url: '/credits',
+      icon: 'card'
+    },
+    {
+      title: 'Settings',
+      url: '/settings',
+      icon: 'cog'
+    },
+    {
+      title: 'Report a ride',
+      url: '/report',
+      icon: 'warning'
+    },
+    {
+      title: 'Share',
+      url: '/share',
+      icon: 'redo'
+    },
+    {
+      title: 'About Ridy',
+      url: '/about',
+      icon: 'journal'
+    },
+    {
+      title: 'Support',
+      url: '/support',
+      icon: 'cafe'
+    },
+    {
+      title: 'Terms & Conditions',
+      url: '/terms',
+      icon: 'expand'
     }
   ];
 

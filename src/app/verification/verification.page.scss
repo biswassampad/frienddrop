@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Lobster+Two&display=swap');
+ion-content{
+    --ion-background-color:#007ea6;
+}
+.wrapper{
+    padding:20px;
+    height:60px;
+    width:400px;
+    color:#f1c40f;
+    font-family: 'Lobster Two', cursive;
+    font-size:30px;
+    
+}
+ion-button {
+    --background:#fec601;
+    --background-activated:#f1c40f;
+    --color:#004183;
+    --color-activated:#004183;
+    font-family: 'Lobster Two', cursive;
+    font-size:20px;
+}
+
+ion-card{
+    background-color: #06bee1;
+    --ion-background-color:#06bee1;
+    padding:10px;
+}
+.tnc{
+    padding:50px;
+}
